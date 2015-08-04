@@ -1,4 +1,4 @@
-# Another minimal react express starter app
+# Minimal react-engine/express app
 
 ```
 npm install
