@@ -15,7 +15,7 @@ app.set('view engine', 'jsx');
 app.set('view', renderer.expressView);
 
 var index = function(req, res) {
-	res.render('index', {
+	res.render('Index', {
 		title: req.params.msg || 'home'
 	});
 };
