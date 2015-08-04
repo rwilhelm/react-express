@@ -1,6 +1,11 @@
 var React = require('react');
 
 var Layout = React.createClass({
+	propTypes: {
+		title: React.PropTypes.any,
+		children: React.PropTypes.any
+	},
+
 	render: function() {
 		return (
 			<html>

@@ -2,6 +2,10 @@ var React = require('react');
 var Layout = require('./Layout.jsx');
 
 var Index = React.createClass({
+	propTypes: {
+		title: React.PropTypes.any
+	},
+
 	render: function() {
 		return (
 			<Layout {...this.props}>
