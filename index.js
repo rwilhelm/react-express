@@ -3,16 +3,15 @@
 
 require('node-jsx').install();
 
-var express = require('express');
-var renderer = require('react-engine');
-var app = express();
-var engine = renderer.server.create();
+var engine = require('react-engine');
+var app = require('express')();
+var path = require('path');
 
-app.engine('.jsx', engine);
+app.engine('.jsx', engine.server.create());
 
-app.set('views', __dirname + '/components');
+app.set('views', path.join(__dirname, '/components'));
 app.set('view engine', 'jsx');
-app.set('view', renderer.expressView);
+app.set('view', engine.expressView);
 
 var index = function(req, res) {
 	res.render('Index', {
@@ -23,4 +22,7 @@ var index = function(req, res) {
 app.get('', index);
 app.get('/:msg', index);
 
-app.listen(4000);
+app.listen(4000, function(err) {
+	if (err) { console.log(err); }
+	console.log('server running on localhost:4000');
+});
