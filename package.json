@@ -1,7 +1,7 @@
 {
   "name": "react-express",
-  "version": "1.0.0",
-  "description": "Really minimal react express starter app",
+  "version": "0.1.2",
+  "description": "Minimal react-engine/express app",
   "main": "index.js",
   "dependencies": {
     "express": "^4.13.3",
@@ -12,10 +12,21 @@
   },
   "devDependencies": {},
   "scripts": {
-    "run": "node --harmony index"
+    "start": "node --harmony index"
   },
   "author": "René Wilhelm <rene.wilhelm@gmail.com>",
   "license": "ISC",
-  "repository": "https://github.com/rwilhelm/react-express/",
-  "bugs": "https://github.com/rwilhelm/react-express/issues"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rwilhelm/react-express/"
+  },
+  "bugs": {
+    "url": "https://github.com/rwilhelm/react-express/issues"
+  },
+  "keywords": [
+    "react-engine",
+    "express",
+    "boilerplate",
+    "starter"
+  ]
 }

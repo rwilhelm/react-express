@@ -2,7 +2,7 @@
 
 ```
 npm install
-node index
+npm start
 curl localhost:4000
 curl localhost:4000/bla
 ```
